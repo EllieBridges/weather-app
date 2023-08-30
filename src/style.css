@@ -1,0 +1,42 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,300;1,400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-style: solid;
+  border-bottom: 2 ;
+  border-color: white;
+}
+
+.linkContainer {
+  width: 100vw;
+  display:grid;
+  grid-template-columns: 1fr repeat(3, 100px);
+  list-style: none;
+}
+
+.navbarLinks{
+  text-decoration: none;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5 auto;
+}
+
+
+.mainHeading{
+  font-size: 5rem;
+  font-weight: 900;
+}
