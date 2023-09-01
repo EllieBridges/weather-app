@@ -1,26 +1,24 @@
 import React from 'react';
-import MapContainer from './MapContainer';
+import Heading from './Heading';
+import Slogan from './Slogan';
+import GrantLocationAccess from './GrantLocationAccess';
+import TextBox from './TextBox';
 
 const Home = () => {
   return (
-    <div className="pageContainer">
-      <header>
-        <h1 className="mainHeading">Weather Where You Are.</h1>
-        <section>
-          <h3>Intro</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quia
-            ipsam deleniti iure harum? Ducimus dolores nobis neque eos,
-            perspiciatis veniam iusto voluptatem placeat soluta corrupti velit,
-            itaque voluptates repellendus!
-          </p>
-        </section>
-        <MapContainer
-          location="Amigos"
-          city="Bury St Edmunds"
-          state="Suffolk"
-        />
+    <div className="pageContainer homebg">
+      <header className="header">
+        <Heading title="Weather" subtitle="Where You Are." />
+        <Slogan />
       </header>
+
+      <section className="localWeather">
+        <TextBox
+          title="Want local forecasts?"
+          content="Click here to get today's weather, next weeks forecast and a map of things to do around your local area."
+        />
+        <GrantLocationAccess />
+      </section>
     </div>
   );
 };

@@ -16,8 +16,7 @@ const MapContainer = ({
         height="450"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyAEW9YDLD1iAGzJFyb69gY4JUsOSQJzrR8
-    &q=${location},${city}+${state}`}
+        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyAEW9YDLD1iAGzJFyb69gY4JUsOSQJzrR8&q=${location},${city}+${state}`}
       ></iframe>
     </section>
   );

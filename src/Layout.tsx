@@ -4,7 +4,7 @@ import { Outlet, Link } from 'react-router-dom';
 const Layout = () => {
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbarbg">
         <ul className="linkContainer">
           <li className="homeButton">
             <Link to="/" className="navbarLinks">
@@ -12,8 +12,8 @@ const Layout = () => {
             </Link>
           </li>
           <li>
-            <Link to="/blogs" className="navbarLinks">
-              Blogs
+            <Link to="/forecast" className="navbarLinks">
+              Forecast
             </Link>
           </li>
           <li>
