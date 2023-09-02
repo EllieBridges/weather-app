@@ -12,6 +12,11 @@ const Layout = () => {
             </Link>
           </li>
           <li>
+            <Link to="/today" className="navbarLinks">
+              Today
+            </Link>
+          </li>
+          <li>
             <Link to="/forecast" className="navbarLinks">
               Forecast
             </Link>
